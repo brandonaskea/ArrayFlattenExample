@@ -13,35 +13,38 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ArrayFlattenExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AFEViewController" customModule="ArrayFlattenExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Array" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dt-LO-tAe">
-                                <rect key="frame" x="8" y="60" width="359" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="rhV-dW-sx2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dt-LO-tAe">
+                                <rect key="frame" x="8" y="60" width="359" height="387"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVB-Cg-dnO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVB-Cg-dnO" customClass="AFEButton" customModule="ArrayFlattenExample" customModuleProvider="target">
                                 <rect key="frame" x="87.5" y="567" width="200" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="KZR-ka-Jqy"/>
                                     <constraint firstAttribute="height" constant="40" id="yrA-tV-feT"/>
                                 </constraints>
                                 <state key="normal" title="Flatten"/>
+                                <connections>
+                                    <action selector="flattenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GbR-Pv-ZLH"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bL-wE-neJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bL-wE-neJ" customClass="AFEButton" customModule="ArrayFlattenExample" customModuleProvider="target">
                                 <rect key="frame" x="87.5" y="487" width="200" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ZDU-WU-tNg"/>
                                     <constraint firstAttribute="width" constant="200" id="gxa-Pa-FX6"/>
                                 </constraints>
                                 <state key="normal" title="Randomize"/>
+                                <connections>
+                                    <action selector="randomizeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0w7-eI-bwW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,6 +52,7 @@
                             <constraint firstItem="TVB-Cg-dnO" firstAttribute="top" secondItem="2bL-wE-neJ" secondAttribute="bottom" constant="40" id="5od-9b-PZF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TVB-Cg-dnO" secondAttribute="bottom" constant="60" id="79d-hE-Ivp"/>
                             <constraint firstItem="4dt-LO-tAe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="MHS-Q8-MbH"/>
+                            <constraint firstItem="2bL-wE-neJ" firstAttribute="top" secondItem="4dt-LO-tAe" secondAttribute="bottom" constant="40" id="YPk-fg-6F1"/>
                             <constraint firstItem="4dt-LO-tAe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="foA-a0-yli"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4dt-LO-tAe" secondAttribute="trailing" constant="8" id="hea-pc-WMx"/>
                             <constraint firstItem="2bL-wE-neJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qOp-7G-GEr"/>
@@ -57,10 +61,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="flattenButton" destination="TVB-Cg-dnO" id="0gh-YI-osK"/>
-                        <outlet property="flattenButtonBottomConstraint" destination="79d-hE-Ivp" id="uLw-Ij-xOf"/>
-                        <outlet property="outputLabel" destination="4dt-LO-tAe" id="SmV-Ln-ZEp"/>
-                        <outlet property="randomizeButton" destination="2bL-wE-neJ" id="hcl-i6-1L7"/>
+                        <outlet property="flattenButton" destination="TVB-Cg-dnO" id="9i3-B9-m69"/>
+                        <outlet property="flattenButtonBottomConstraint" destination="79d-hE-Ivp" id="wDo-da-mwV"/>
+                        <outlet property="outputLabel" destination="4dt-LO-tAe" id="hvG-7B-Z4E"/>
+                        <outlet property="randomizeButton" destination="2bL-wE-neJ" id="Uiv-9Y-ltN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		8980C027220CE76200C3B005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980C026220CE76200C3B005 /* AppDelegate.swift */; };
-		8980C029220CE76200C3B005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980C028220CE76200C3B005 /* ViewController.swift */; };
 		8980C02C220CE76200C3B005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8980C02A220CE76200C3B005 /* Main.storyboard */; };
 		8980C02E220CE76400C3B005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8980C02D220CE76400C3B005 /* Assets.xcassets */; };
 		8980C031220CE76400C3B005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8980C02F220CE76400C3B005 /* LaunchScreen.storyboard */; };
-		8980C03C220CE76400C3B005 /* ArrayFlattenExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980C03B220CE76400C3B005 /* ArrayFlattenExampleTests.swift */; };
+		8980C052220D013400C3B005 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980C051220D013400C3B005 /* IntExtension.swift */; };
+		8980C056220D080D00C3B005 /* AFEButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980C055220D080D00C3B005 /* AFEButton.swift */; };
+		8980C058220D08E900C3B005 /* AFEArrayFlattener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980C057220D08E900C3B005 /* AFEArrayFlattener.swift */; };
+		8980C05A220D091600C3B005 /* AFEArrayRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980C059220D091600C3B005 /* AFEArrayRandomizer.swift */; };
+		8980C05C220D095300C3B005 /* AFEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980C05B220D095300C3B005 /* AFEViewController.swift */; };
+		8980C063220D16FE00C3B005 /* AFEArrayFlattener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980C057220D08E900C3B005 /* AFEArrayFlattener.swift */; };
+		8980C065220D174B00C3B005 /* AFETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980C064220D174B00C3B005 /* AFETests.swift */; };
+		8980C066220D179600C3B005 /* AFEArrayRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980C059220D091600C3B005 /* AFEArrayRandomizer.swift */; };
+		8980C067220D185A00C3B005 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8980C051220D013400C3B005 /* IntExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +35,18 @@
 /* Begin PBXFileReference section */
 		8980C023220CE76200C3B005 /* ArrayFlattenExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArrayFlattenExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8980C026220CE76200C3B005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8980C028220CE76200C3B005 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8980C02B220CE76200C3B005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8980C02D220CE76400C3B005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8980C030220CE76400C3B005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8980C032220CE76400C3B005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8980C037220CE76400C3B005 /* ArrayFlattenExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArrayFlattenExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8980C03B220CE76400C3B005 /* ArrayFlattenExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayFlattenExampleTests.swift; sourceTree = "<group>"; };
 		8980C03D220CE76400C3B005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8980C051220D013400C3B005 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		8980C055220D080D00C3B005 /* AFEButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFEButton.swift; sourceTree = "<group>"; };
+		8980C057220D08E900C3B005 /* AFEArrayFlattener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFEArrayFlattener.swift; sourceTree = "<group>"; };
+		8980C059220D091600C3B005 /* AFEArrayRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFEArrayRandomizer.swift; sourceTree = "<group>"; };
+		8980C05B220D095300C3B005 /* AFEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFEViewController.swift; sourceTree = "<group>"; };
+		8980C064220D174B00C3B005 /* AFETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFETests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				8980C026220CE76200C3B005 /* AppDelegate.swift */,
-				8980C028220CE76200C3B005 /* ViewController.swift */,
-				8980C02A220CE76200C3B005 /* Main.storyboard */,
-				8980C02D220CE76400C3B005 /* Assets.xcassets */,
-				8980C02F220CE76400C3B005 /* LaunchScreen.storyboard */,
+				8980C053220D079800C3B005 /* Scenes */,
+				8980C054220D07CF00C3B005 /* Views */,
+				8980C04F220D010200C3B005 /* Model */,
+				8980C05D220D0FE800C3B005 /* Assets */,
 				8980C032220CE76400C3B005 /* Info.plist */,
 			);
 			path = ArrayFlattenExample;
@@ -90,10 +101,54 @@
 		8980C03A220CE76400C3B005 /* ArrayFlattenExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				8980C03B220CE76400C3B005 /* ArrayFlattenExampleTests.swift */,
 				8980C03D220CE76400C3B005 /* Info.plist */,
+				8980C064220D174B00C3B005 /* AFETests.swift */,
 			);
 			path = ArrayFlattenExampleTests;
+			sourceTree = "<group>";
+		};
+		8980C04F220D010200C3B005 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8980C050220D010F00C3B005 /* Extensions */,
+				8980C057220D08E900C3B005 /* AFEArrayFlattener.swift */,
+				8980C059220D091600C3B005 /* AFEArrayRandomizer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8980C050220D010F00C3B005 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8980C051220D013400C3B005 /* IntExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8980C053220D079800C3B005 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8980C02A220CE76200C3B005 /* Main.storyboard */,
+				8980C05B220D095300C3B005 /* AFEViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8980C054220D07CF00C3B005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8980C055220D080D00C3B005 /* AFEButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8980C05D220D0FE800C3B005 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8980C02D220CE76400C3B005 /* Assets.xcassets */,
+				8980C02F220CE76400C3B005 /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +204,7 @@
 					};
 					8980C036220CE76400C3B005 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 8980C022220CE76200C3B005;
 					};
 				};
@@ -197,8 +253,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8980C029220CE76200C3B005 /* ViewController.swift in Sources */,
+				8980C056220D080D00C3B005 /* AFEButton.swift in Sources */,
+				8980C05C220D095300C3B005 /* AFEViewController.swift in Sources */,
+				8980C058220D08E900C3B005 /* AFEArrayFlattener.swift in Sources */,
+				8980C052220D013400C3B005 /* IntExtension.swift in Sources */,
 				8980C027220CE76200C3B005 /* AppDelegate.swift in Sources */,
+				8980C05A220D091600C3B005 /* AFEArrayRandomizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8980C03C220CE76400C3B005 /* ArrayFlattenExampleTests.swift in Sources */,
+				8980C065220D174B00C3B005 /* AFETests.swift in Sources */,
+				8980C067220D185A00C3B005 /* IntExtension.swift in Sources */,
+				8980C063220D16FE00C3B005 /* AFEArrayFlattener.swift in Sources */,
+				8980C066220D179600C3B005 /* AFEArrayRandomizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +460,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4LJ2YC4BS;
 				INFOPLIST_FILE = ArrayFlattenExampleTests/Info.plist;
@@ -407,6 +471,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ArrayFlattenExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArrayFlattenExample.app/ArrayFlattenExample";
@@ -418,6 +483,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4LJ2YC4BS;
 				INFOPLIST_FILE = ArrayFlattenExampleTests/Info.plist;
